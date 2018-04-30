@@ -1,3 +1,21 @@
+var slideout = new Slideout({
+    'panel': document.getElementById('panel'),
+    'menu': document.getElementById('menu'),
+    'padding': 256,
+    'tolerance': 70
+});
+
+// Toggle button
+document.querySelector('.toggle-button').addEventListener('click', function() {
+    slideout.toggle();
+});
+
+
+
+
+
+
+
 var memImgPath="./images/Memberdrinks";
 var members=['memberdrink-a','memberdrink-b','memberdrink-c','memberdrink-d','memberdrink-e','memberdrink-f','memberdrink-g'];
 var memberinfo=['membera','memberb','memberc','memberd','membere','memberf','memberg'];
@@ -32,6 +50,11 @@ function getmember_member_pic(memberPath)    //get split drinks and member's pic
     $('#drinks_bottom').css('background-image', "url("+memberPath+"2.png)");
   }
 }
+
+$(".menu_ori").click(function()
+{
+    slideout.toggle();
+});
 
 $(".pre_arrow").click(function(){
    if(member_now<=0)

@@ -1,43 +1,57 @@
-<!DOCTYPE html>
-<html>
-  <head>
-     <meta charset="utf-8">
-	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>UIDD_2018_Group_H</title>
-	 <link rel="icon" href="./images/teamicon_black.png">
-	 <link type="text/css" rel="stylesheet" href="./style/about_us.css">
-	 <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/CDD78035-A4CC-F346-9EB6-2D9A506F88C7/main.js" charset="UTF-8"></script><script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-     
-	 
-	 
-  </head> 
-  <body>
-     <div class="left_bar">
-	       <div class="menu"></div>
-		   <div class="page_tag"></div>
-     </div>
-	 
-	 <div class="main_contain">
-	       <div class="homeicon"></div>
-		   <div class="topic"></div>
-		   <div class="page_annotation"></div>
-	 </div>
-	 <div class="display_area">
-	       <div class="pre_arrow"></div>
-		   <div class="member_drinks"> 
-		       <div id="drinks_top"></div>
-			   <div id="member_pic"></div>
-			   <div id="drinks_bottom"></div>
-			   <div id="drinks"></div>
-			   <div id="light"></div>
-		   </div>
-		   <div class="next_arrow"></div>
-		   <div class="member_info_display">
-		       <div id="arrow_black"></div>
-               <div id="member_info"></div>	
-               <div id="bring_back"></div>			   
-		   </div>
-	 </div>
-	<script src="js/about_us.js"></script>
-  </body>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Slideout Demo</title>
+        <meta http-equiv="cleartype" content="on">
+        <meta name="MobileOptimized" content="320">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <link type="text/css" rel="stylesheet" href="./style/about_us.css">
+    </head>
+    
+    <nav id="menu">           
+        <div class="slide_bar">
+            <div id="home_list" onclick="window.location='https://king1224.github.io/about_us/';"></div>
+            <div id="team_member_list" onclick="window.location='https://king1224.github.io/about_us/';"></div>
+            <div id="app_introduction_list" onclick="window.location='https://king1224.github.io/about_us/';"></div>
+            <div id="contact_us_list" onclick="window.location='https://king1224.github.io/about_us/';"></div>
+       </div>
+    </nav>
+    
+    <button class="toggle-button">I don't know why this must exist@_@</button>
+    <body style="margin:0 0 0 0;">
+        <div class="left_bar">
+            <div class="menu_ori"></div>
+            <div class="page_tag"></div>
+        </div>
+        <main id="panel">
+
+            <div class="main_contain">
+                <div class="homeicon" onclick="window.location='https://king1224.github.io/about_us/';"></div>
+                <div class="topic"></div>
+                <div class="page_annotation"></div>
+            </div>
+            <div class="display_area">
+                <div class="pre_arrow"></div>
+                <div class="member_drinks"> 
+                    <div id="drinks_top"></div>
+                    <div id="member_pic"></div>
+                    <div id="drinks_bottom"></div>
+                    <div id="drinks"></div>
+                    <div id="light"></div>
+                </div>
+                <div class="next_arrow"></div>
+                <div class="member_info_display">
+                    <div id="arrow_black"></div>
+                    <div id="member_info"></div>	
+                    <div id="bring_back"></div>			   
+                </div>
+            </div>
+            <script src="./js./about_us.js"></script>
+        </main>
+    </body>
 </html>
