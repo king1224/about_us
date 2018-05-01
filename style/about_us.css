@@ -14,7 +14,7 @@
 .slideout-panel {
     position:relative;
     z-index: 1;
-    left: 0%;
+    will-change: transform;
 }
 
 .slideout-open,
@@ -41,7 +41,12 @@
 }
 /*@media only screen and (min-width: 768px) {*/
 /* For desktop: */
+body{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
 main{
+    background-color: white;
     display: grid;
     grid-template-columns: 8fr 9fr 2fr;
     grid-template-rows: 2fr 7fr 1fr;
@@ -288,21 +293,22 @@ main{
 .member_info_display
 {
     grid-row:1/6;
-    grid-column:4/7;
+    grid-column:4/8;
     /* background-size: contain;
     background-position: center;
     background-repeat: no-repeat;*/
     display:none;	  
     grid-template-columns:5% 20% 30% auto;
-    grid-template-rows: 10% auto 10% 5%;  
+    grid-template-rows: 20% auto 15% 5%;  
 }
+
 #arrow_black
 {
     grid-row:1/2;
     grid-column:2/3;
     background-image: url('../images/back_to_last_choose.png');
     background-size: contain;
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat; 
     display:none;	   
 }

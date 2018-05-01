@@ -1,0 +1,233 @@
+.slideout-menu {
+    position: fixed;
+    left: 7%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    width: 256px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    display: none;
+}
+
+.slideout-panel {
+    position:relative;
+    z-index: 1;
+    will-change: transform;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+    overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+    display: block;
+}
+.toggle-button{
+    display: none;
+}
+
+
+
+
+/* For mobile phones: */
+
+@media only screen and (min-width: 600px) {
+/* For tablets: */
+
+}
+/*@media only screen and (min-width: 768px) {*/
+/* For desktop: */
+body{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+main{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 8fr 9fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'main_contain display_area display_area';
+    height: 100vh;
+    width: 93vw;
+    float: right;
+    margin: 0 auto;
+} 
+
+.left_bar
+{
+    position: absolute;
+    background-color:#222222;
+    display:grid;
+    width: 7vw;
+    height: 100vh;
+    grid-template-columns:30% 40% 30%;
+    grid-template-rows: 5% 7% 13% 71%;
+    grid-row-gap: 0%;
+    grid-template-areas: ". . ."
+                         ". menu_ori ."
+                         ". . ."
+                         "page_tag page_tag page_tag";
+}
+.menu_ori
+{
+    grid-area:menu_ori;
+    background-image: url('../images/menuicon.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.menu_ori:hover
+{
+    background-color:#555555;
+    cursor: pointer;
+}
+.page_tag
+{
+    grid-area:page_tag;
+    background-image: url('../images/only_for_web.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide_bar{
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color:#222222;
+}
+
+#home_list{
+    height: 5%;
+    background-image: url('../images/before_home.png');
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    margin-top: 25vh;
+    margin-left: 10%;
+}
+
+#team_member_list{
+    height: 5%;
+    background-image: url('../images/before_member.png');
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+#app_introduction_list{
+    height: 5%;
+    background-image: url('../images/after_appintro.png');
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+#contact_us_list{
+    height: 5%;
+    background-image: url('../images/beore_contact.png');
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.main_contain
+{
+    //background-color:blue;
+    grid-area:main_contain;
+    display:grid;
+    grid-template-columns:20% auto 5% 15%;
+    grid-template-rows: 25% 7% 7% 10% 5% 10% 14% 10%;
+    grid-row-gap: 0%;
+    grid-template-areas: ". . . ."
+                         ". homeicon . ."
+                         ". . . ."
+                         ". topic . ."
+                         ". . . ."
+                         ". p1 p1 ."
+                         ". . . ."
+                         ". page_annotation . .";
+}
+.homeicon
+{
+    grid-area:homeicon;
+    background-image: url('../images/teamicon_black.png');
+    background-size: contain;
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+.topic
+{
+    grid-area:topic;
+    background-image: url('../images/AppIntro/title.png');
+    background-size: contain;
+    background-position: top left;
+    background-repeat: no-repeat; 
+}
+.p1
+{
+    grid-area:p1;
+    background-image: url('../images/AppIntro/p1.png');
+    background-size: contain;
+    background-position: top left;
+    background-repeat: no-repeat; 
+}
+.page_annotation
+{
+    grid-area:page_annotation;
+    background-image: url('../images/AppIntro/KIMOCHI.png');
+    background-size: contain;
+    background-position: center left;
+    background-repeat: no-repeat;
+}
+.display_area
+{
+    grid-area:display_area;
+    display:grid;
+    grid-template-columns: 20% 10% 50% 20%;
+    grid-template-rows: 52% 30% 18%;
+    grid-template-areas: ". . . ."
+                         ". p2 p2 ."
+                         ". line . .";
+}
+
+.p2
+{
+    grid-area:p2;
+    background-image: url('../images/AppIntro/p2.png');
+    background-size: contain;
+    background-position: top left;
+    background-repeat: no-repeat; 
+}
+
+.line
+{
+    grid-area:line;
+    background-image: url('../images/AppIntro/line.png');
+    background-size: contain;
+    background-position: top left;
+    background-repeat: no-repeat; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
