@@ -134,6 +134,16 @@ main{
     margin-left: 10%;
 }
 
+#messageboard_list{
+    height: 5%;
+    background-image: url('../images/before_board.png');
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
 #contact_us_list{
     height: 5%;
     background-image: url('../images/beore_contact.png');
