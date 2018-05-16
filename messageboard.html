@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Message Board</title>
+        <meta http-equiv="cleartype" content="on">
+        <meta name="MobileOptimized" content="320">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <link type="text/css" rel="stylesheet" href="./style/messageboard.css">
+    </head>
+    
+    <nav id="menu">           
+        <div class="slide_bar">
+            <div id="home_list" onclick="window.location='https://king1224.github.io/about_us/';"></div>
+            <div id="team_member_list" onclick="window.location='./index.html';"></div>
+            <div id="app_introduction_list" onclick="window.location='./introduction.html';"></div>
+            <div id="contact_us_list" onclick="window.location='https://king1224.github.io/about_us/';"></div>
+       </div>
+    </nav>
+    
+    <button class="toggle-button">I don't know why this must exist@_@</button>
+    <body style="margin:0 0 0 0;">
+        <div class="left_bar">
+            <div class="menu_ori"></div>
+            <div class="page_tag" onclick="window.location='https://king1224.github.io/about_us/';"></div>
+        </div>
+        <main id="panel">
+
+            <div class="main_contain">
+                <div class="homeicon" onclick="window.location='https://king1224.github.io/about_us/';"></div>
+                <div class="topic"></div>
+                <div class="page_annotation"></div>
+                <form id='ajax_form' method="get">
+                    <input id="inputfield" name="msg" type="text">
+                    <button id="ajax_btn" type="submit">ajax submit</button>
+                </form>
+            </div>
+            <div class="display_area">
+                <div id="bg">
+                </div>
+                <div id="board">
+                </div>
+            </div>
+            <script src="./js/messageboard.js"></script>
+        </main>
+    </body>
+</html>

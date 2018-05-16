@@ -1,0 +1,23 @@
+{
+  "name": "about_us",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/king1224/about_us.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/king1224/about_us/issues"
+  },
+  "homepage": "https://github.com/king1224/about_us#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
